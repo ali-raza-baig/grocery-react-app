@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow: auto;
+}
+
+.homepage-hero ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-image: url('/HomePage/1.jpg');
+    background-size: cover;
+    /* Adjust this to fit the image */
+    background-position: center;
+    z-index: -2;
+    /* Ensure the background is behind the content */
+    opacity: 0.9;
+}
+
+.homepage::before {
+    content: "";
+    position: absolute;
+    top: 80;
+    left: 30;
+    width: 100%;
+    height: 100%;
+    background-image: url('/HomePage/47.jfif');
+    background-size: cover;
+    /* Adjust this to fit the image */
+    background-position: center;
+    z-index: -2;
+    /* Ensure the background is behind the content */
+    opacity: 0.5;
+    /* Optional: Adjust the opacity of the background */
+}
+
+.top-seller-home {
+    position: relative;
+    margin: auto;
+    background-image: url(/HomePage/1.jpg);
+    background-repeat: no-repeat;
+    background-size: 90vw;
+    width: 90%;
+    background-position: center;
+}
+
+.about-hero {
+    position: relative;
+    height: 450px;
+    background-image: url(/Image/Pics/1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+
+}
+
+.contact-hero,
+.homepage,
+.shoppage {
+    position: relative;
+    z-index: 1;
+    color: white !important;
+    /* Ensure content is on top of the background  */
+}
+
+.contact-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Image/Pic.jfif');
+    background-size: cover;
+    /* Adjust this to fit the image */
+    background-position: center;
+    z-index: -1;
+    /* Ensure the background is behind the content */
+    opacity: 1;
+    /* Optional: Adjust the opacity of the background */
+}
+
+.loginpage {
+    background-image: url(/Image/login/pic.jfif);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    border-top-left-radius: 200px;
+    opacity: 1;
+}
+
+.shoppage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(221, 217, 217);
+    background-image: url('/shop/10.jfif');
+    background-size: cover;
+    /* Adjust this to fit the image */
+    background-position: center;
+    z-index: -1;
+    /* Ensure the background is behind the content */
+    opacity: 5;
+}
+
+.shoppage1 {
+    background-image: url('/shop/31.jpg');
+    height: 400px;
+    padding-top: 5px;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    opacity: 1;
+}
