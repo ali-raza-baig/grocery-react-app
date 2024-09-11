@@ -1,9 +1,8 @@
+import flowbite from "flowbite-react/tailwind"
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/flowbite/**/*.js",
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}",
+    flowbite.content(),
   ],
   theme: {
     extend: {},
@@ -12,13 +11,9 @@ export default {
       blackbg: '#031e00',
       yellowbg: '#e7d37f',
     },
-    backgroundImage: {
-      // 'hero-home': "url('/HomePage/1.jfif')",
-      // 'footer-texture': "url('/img/footer-texture.png')",
-    },
   },
   plugins: [
-    import('flowbite/plugin')
+    flowbite.plugin(),
   ],
 }
 
